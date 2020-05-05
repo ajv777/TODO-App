@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #F44336;
+    border-top: 20px solid #D32F2F;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+header form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+}
+
+header form div:first-child {
+    width: 40%;
+}
+
+header form div:nth-child(2) {
+    width: 30%;
+    margin: 0 30px;
+}
+
+header form div:last-child {
+    width: 20%;
+}
+
+#introducirTarea {
+    width: 100%;
+    padding: 8px;
+}
+
+#prioridad,
+#filtroPrioridad,
+#buscarTarea {
+    padding: 8px;
+}
+
+#prioridad {
+    width: 100%;
+}
+
+#buscarTarea {
+    width: 100%;
+}
+
+#btnGuardar {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: 2px solid #D32F2F;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#btnGuardar:hover {
+    background-color: #D32F2F;
+    opacity: 0.9;
+}
+
+main .buscarDatos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #D32F2F;
+    padding: 15px 20px;
+}
+
+#filtroPrioridad {
+    width: 20%;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+.buscarDatos div {
+    width: 30%;
+}
+
+#buscarTarea {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 12px 30px;
+    border-bottom: 2px solid #D32F2F;
+}
+
+li:hover {
+    background-color: rgba(235, 224, 224, 0.829);
+    color: #D32F2F;
+    opacity: 0.6px;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    width: 100px;
+    float: right;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
+
+#mensaje {
+    max-width: 40%;
+    margin: 0 auto;
+    font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.diaria{
+    background-color:#dedede;
+}
+.mensual{
+    background-color: #cccccc;
+}
+.urgente{
+    background-color: #999999;
+}
+
+
+@media (max-width: 710px) {
+
+    header form {
+        flex-direction: column;
+    }
+
+    header form div:first-child {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    header form div:nth-child(2) {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    header form div:last-child {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    main .buscarDatos {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #filtroPrioridad {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+    }
+
+    .buscarDatos div {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App Ana JV</title>
+    <link rel="stylesheet" href="css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <script src="js/bbdd.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Formulario para introducir tareas -->
+        <header>
+            <form class="introducirDatos">
+                <div>
+                    <input type="text" id="introducirTarea" placeholder="Introduce una tarea...">
+                </div>
+                <div>
+                    <select id="prioridad">
+                        <option value="">Selecciona una prioridad</option>
+                        <option value="urgente">URGENTE</option>
+                        <option value="diaria">Diaria</option>
+                        <option value="mensual">Mensual</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" id="btnGuardar" value="Guardar">
+                </div>
+            </form>
+            <h3 id="mensaje"></h3>
+        </header>
+        <!-- Seleccionar tareas y desplegable de tareas -->
+        <main>
+            <section class="buscarDatos">
+                <select id="filtroPrioridad">
+                    <option value="">Busca tus tareas por prioridad</option>
+                    <option value="urgente">URGENTE</option>
+                    <option value="diaria">Diaria</option>
+                    <option value="mensual">Mensual</option>
+                </select>
+                <div>
+                    <input type="text" id="buscarTarea" placeholder="¿Qué tarea quieres buscar?">
+                </div>
+            </section>
+            <section>
+                <ul id=listaTareas>
+                    <!-- <li>Tarea 1 <span onclick="eliminarTarea(event)" id="btnEliminar"><i class="fas fa-trash-alt"></i></span></li> -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
